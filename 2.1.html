@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            width: 80%;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        .item {
+            background-color: #26ae5f;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .item1 {
+            grid-column: span 3;
+        }
+        
+    
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item item1">Header Section</div>
+        <div class="item item2">Navigation</div>
+        <div class="item item3">Main Content</div>
+        <div class="item item4">Sidebar</div>
+        <div class="item item5">Recent Updates</div>
+        <div class="item item6">Gallery</div>
+        <div class="item item7">Contact Us</div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+    <style>
+        /* General Styles */
+        body {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #141E30, #243B55);
+            color: white;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #FFD700; /* Gold Title for Better Visibility */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Image Container */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .image-container img {
+            display: none;
+            width: 60%;
+            max-width: 600px;
+            border-radius: 12px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out, opacity 0.5s ease-in-out;
+            opacity: 0;
+        }
+
+        /* Hover Effect */
+        .image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Small Image for Mobile */
+        @media (max-width: 600px) {
+            .image-container .img-small {
+                display: block;
+                opacity: 1;
+            }
+        }
+
+        /* Medium Image for Tablets & Normal Screens */
+        @media (min-width: 601px) and (max-width: 1499px) {
+            .image-container .img-medium {
+                display: block;
+                opacity: 1;
+            }
+        }
+
+        /* Large Image for Desktop Screens */
+        @media (min-width: 1500px) {
+            .image-container .img-large {
+                display: block;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2> Responsive Image Display</h2>
+    
+    <div class="image-container">
+        <img src="caribbean.jpg" class="img-small" alt="Small Image">
+        <img src="formal_letter.png" class="img-medium" alt="Medium Image">
+        <img src="landscape.jpg" class="img-large" alt="Large Image">
+    </div>
+
+</body>
+</html>

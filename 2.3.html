@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            height: 100vh;
+            background-color: #f8e1e7;
+        }
+        .container {
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            height: 100vh;
+        }
+        .header {
+            background: linear-gradient(90deg, #ff4f70, #ff7eb3);
+            padding: 25px;
+            font-size: 36px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            background-color: #ffccd5;
+            height: 100%;
+            gap: 20px;
+            padding: 30px;
+        }
+        .sidebar {
+            background: linear-gradient(135deg, #ff88a5, #ffdde1);
+            padding: 25px;
+            font-size: 22px;
+            font-weight: bold;
+            color: white;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .sidebar ul li {
+            padding: 10px;
+            font-size: 20px;
+            transition: 0.3s;
+        }
+        .sidebar ul li:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .main {
+            background: white;
+            padding: 30px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: justify;
+        }
+        .footer {
+            background: linear-gradient(90deg, #ff4f70, #ff7eb3);
+            text-align: center;
+            padding: 25px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            letter-spacing: 1px;
+            box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Welcome to Our Awesome Website</div>
+        <div class="content">
+            <div class="sidebar">
+                <h3>Sidebar Menu</h3>
+                <ul>
+                    <li> Home</li>
+                    <li> About Us</li>
+                    <li> Services</li>
+                    <li> Contact</li>
+                </ul>
+            </div>
+            <div class="main">
+                <h2>Main Content Area</h2>
+                <p>Welcome to our platform! We provide high-quality services to help you achieve your goals. Whether you're looking for business solutions or personal growth, we've got you covered.</p>
+                <h3>Our Services</h3>
+                <ul>
+                    <li> Web Development</li>
+                    <li> Digital Marketing</li>
+                    <li> SEO Optimization</li>
+                    <li> Consulting Services</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">&copy; 2025 Our Company. All Rights Reserved.</div>
+    </div>
+</body>
+</html>

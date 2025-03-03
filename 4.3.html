@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Website</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #141E30, #243B55);
+            color: #e0e0e0; /* Soft white for smooth blending */
+        }
+
+        /* Main Container */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Header */
+        .header {
+            width: 80%;
+            padding: 20px;
+            background: linear-gradient(to right, #3A1C71, #D76D77, #FFAF7B);
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            border-radius: 12px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+            letter-spacing: 1px;
+        }
+
+        /* Main Content Layout */
+        .content {
+            display: flex;
+            width: 80%;
+            margin-top: 20px;
+            gap: 15px;
+        }
+
+        /* Sidebar (Navigation) */
+        .sidebar {
+            flex: 1;
+            background: linear-gradient(to bottom right, #00C6FB, #005BEA);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 8px;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Main Content Section */
+        .info {
+            flex: 2;
+            text-align: left;
+            background: linear-gradient(to bottom right, #A18CD1, #FBC2EB);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            color: #2C3E50; /* Dark grayish-blue for readability */
+        }
+
+        /* Organized Section */
+        .organized {
+            flex: 1;
+            background: linear-gradient(to bottom right, #FF6A88, #FF99AC);
+            color: white;
+            padding: 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .sidebar, .info, .organized {
+                width: 100%;
+                text-align: center;
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">CLUB Website</div>
+        
+        <div class="content">
+            <!-- Sidebar Navigation -->
+            <div class="sidebar">
+                <p><b>&#127760; Explore Our Sections</b></p> 
+                <a href="" target="_blank">&#127881; Events</a> 
+                <a href="" target="_blank">&#128101; Members</a> 
+                <a href="" target="_blank">&#128218; Resources</a> 
+                <a href="" target="_blank">&#128222; Contact Us</a> 
+            </div>
+
+            <!-- Main Content Section -->
+            <div class="info">
+                <h2>&#128640; Welcome to Our Club!</h2> 
+                <p>We are a passionate community dedicated to learning, networking, and personal growth. Whether you're here for professional development, social engagement, or just some fun activities, you'll find something exciting at our club!</p>
+                
+                <h3>&#128161; What We Offer:</h3> 
+                <ul>
+                    <li>&#127908; <b>Guest Speaker Sessions:</b> Learn from industry leaders and successful entrepreneurs.</li> 
+                    <li>&#128214; <b>Workshops & Training:</b> Enhance your skills in technology, leadership, and creativity.</li> 
+                    <li>&#127942; <b>Competitions & Hackathons:</b> Challenge yourself and showcase your talents.</li> 
+                    <li>&#127917; <b>Social Events:</b> Enjoy meetups, game nights, and networking opportunities.</li> 
+                </ul>
+
+                <h3>&#127757; Get Involved</h3> 
+                <p>Stay updated with our upcoming events and programs. Join us and be part of an amazing community!</p>
+                <p> <a href="" style="color:#005BEA; font-weight:bold;">Click here to Join Now</a></p>
+            </div>
+
+            <!-- Organized By Section -->
+            <div class="organized">
+                <h3>&#128197; Organized by:</h3> 
+                <p><b>The Event Team</b></p>
+                <p>Meet the dedicated individuals who plan and organize all our exciting activities!</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

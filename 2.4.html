@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            display: grid;
+            grid-template-rows: auto 1fr;
+            height: 100vh;
+            background-color: #e3f2a1;
+        }
+        .container {
+            display: grid;
+            grid-template-rows: auto 1fr;
+            height: 100vh;
+        }
+        .header {
+            background: linear-gradient(90deg, #aaff33, #88cc00);
+            padding: 30px;
+            font-size: 36px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            height: 100%;
+            gap: 15px;
+            padding: 30px;
+        }
+        .main {
+            background: white;
+            padding: 25px;
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 15px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+        .main p {
+            font-size: 18px;
+            color: #333;
+        }
+        .aside-container {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            gap: 15px;
+        }
+        .aside {
+            background: #99e600;
+            padding: 20px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 15px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            color: white;
+        }
+        .aside p {
+            font-size: 16px;
+            font-weight: normal;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Welcome to Our Engaging Website</div>
+        <div class="content">
+            <div class="main">
+                <h2>Main Content Area</h2>
+                <p>Our website is designed to provide an immersive and informative experience. We offer valuable content, interactive features, and a seamless browsing experience.</p>
+                <h3>Featured Topics</h3>
+                <ul>
+                    <li>Latest Technology Trends</li>
+                    <li>Business Strategies for Success</li>
+                    <li>Creative Design Inspirations</li>
+                    <li>Personal Development Tips</li>
+                </ul>
+            </div>
+            <div class="aside-container">
+                <div class="aside">
+                    <h3>Aside 2 - Updates</h3>
+                    <p>Check out the latest news and articles curated just for you.</p>
+                    <ul>
+                        <li>Breaking News: Tech Innovations</li>
+                        <li>New Business Trends 2025</li>
+                        <li>Upcoming Web Development Frameworks</li>
+                        <li>Top Design Trends This Year</li>
+                    </ul>
+                </div>
+                <div class="aside">
+                    <h3>Aside 1 - Quick Links</h3>
+                    <p>Find useful resources, guides, and helpful materials here.</p>
+                    <ul>
+                        <li><a href="#" style="color: white; text-decoration: none;">Guides & Tutorials</a></li>
+                        <li><a href="#" style="color: white; text-decoration: none;">Online Courses</a></li>
+                        <li><a href="#" style="color: white; text-decoration: none;">Resource Library</a></li>
+                        <li><a href="#" style="color: white; text-decoration: none;">Community Forum</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
